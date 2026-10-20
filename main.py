@@ -3,7 +3,7 @@ from pyscript import display, document
 def add_brand (e) : 
     document.getElementById('output1').innerHTML = ""
 
-    brands={'oxgn', 'H&M', 'uniqlo'}
+    brands= {'Oxgn', 'H&M', 'Uniqlo'}
 
     input_brand= document.getElementById('input1').value
 
@@ -15,5 +15,5 @@ def add_brand (e) :
 
     brand_list = "<br>".join(sorted(all_brands))
 
-    document.getElementById('output1').innerHTML = f'all brands: <br> {brand_list}'
-    display(f'Total brands: {total_brands}, target="output1"')
+    document.getElementById('output1').innerHTML = f'All brands: <br>{brand_list}'
+    display(f'Total brands: {total_brands}', target="output1")
